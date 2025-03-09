@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details - Flavora | Explore Delicious Dishes</title>
+    <meta name="description" content="Get detailed instructions and ingredients for your favorite recipes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="flavora-logo.png.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="recipe-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            Flavora
+        </div>
+        <div class="nav-links">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="recipes.html" class="active">
+                <i class="fas fa-book-open"></i>
+                <span>Recipes</span>
+            </a>
+            <a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for delicious recipes...">
+                <button class="voice-search" title="Search with voice">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="recipe-detail-main">
+        <div class="back-button">
+            <a href="recipes.html"><i class="fas fa-arrow-left"></i> Back to recipes</a>
+        </div>
+        
+        <div class="recipe-detail-container">
+            <div class="recipe-header">
+                <div class="recipe-title-section">
+                    <h1 id="recipe-title">Recipe Title</h1>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> <span id="recipe-time">30 mins</span></span>
+                        <span><i class="fas fa-user-friends"></i> <span id="recipe-servings">4 servings</span></span>
+                        <span><i class="fas fa-fire"></i> <span id="recipe-calories">450 cal</span></span>
+                    </div>
+                    <div class="recipe-tags" id="recipe-tags">
+                        <span class="tag">Category</span>
+                        <span class="tag">Time</span>
+                    </div>
+                </div>
+                <div class="recipe-actions">
+                    <button class="save-recipe">
+                        <i class="far fa-bookmark"></i>
+                        Save
+                    </button>
+                    <button class="share-recipe">
+                        <i class="fas fa-share-alt"></i>
+                        Share
+                    </button>
+                    <button class="print-recipe">
+                        <i class="fas fa-print"></i>
+                        Print
+                    </button>
+                </div>
+            </div>
+            
+            <div class="recipe-hero">
+                <img id="recipe-image" src="https://via.placeholder.com/800x500" alt="Recipe Image">
+            </div>
+            
+            <div class="recipe-description" id="recipe-description">
+                <p>Recipe description goes here.</p>
+            </div>
+            
+            <div class="recipe-content-wrapper">
+                <div class="recipe-sidebar">
+                    <div class="ingredients-section">
+                        <h2>Ingredients</h2>
+                        <ul id="recipe-ingredients">
+                        </ul>
+                    </div>
+                    
+                    <div class="nutrition-section">
+                        <h2>Nutrition Facts</h2>
+                        <div class="nutrition-facts" id="nutrition-facts">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-main-content">
+                    <div class="instructions-section">
+                        <h2>Instructions</h2>
+                        <ol id="recipe-instructions">
+                        </ol>
+                    </div>
+                    
+                    <div class="video-section">
+                        <h2>Recipe Video</h2>
+                        <div class="video-container" id="recipe-video">
+                        </div>
+                    </div>
+                    
+                    <div class="tips-section">
+                        <h2>Chef's Tips</h2>
+                        <ul id="recipe-tips">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="related-recipes">
+                <h2>You Might Also Like</h2>
+                <div class="related-recipes-grid" id="related-recipes">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Flavora is your ultimate cooking companion, bringing delicious recipes and culinary inspiration right to your fingertips.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Flavora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="recipe-detail.js"></script>
+</body>
+</html>
